@@ -1,0 +1,132 @@
+:root{
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gradientColor:linear-gradient(to right, hsl(187,85%,43%) , hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --graytext:rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG:rgb(225,225,235);
+  --textColor:hsl(240,4%,36%);
+  }
+.payment-container {
+  background-image: url('./../Assets/payment.jpg');
+  background-size: cover; 
+  width: auto;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-header {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: var(--whiteColor);
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  color: var(--blackColor);
+ 
+}
+.payment-option {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 10px;
+}
+
+.payment-option label{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.card-details {
+  display: none;
+}
+.payment-option label .icon {
+ padding-left: 20px;
+ font-size: 60px;
+}
+
+.payment-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.debit-card-details{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight:bolder;
+}
+
+.input-field{
+  width: 300px;
+  display: block;
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn{
+  color: white;
+  
+}
+
+
+/* Payment successfull */
+.paymentsuccess {
+  text-align: center;
+  padding-top: 250px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 200px;
+  height: 35px;
+  padding:10px 20px;
+  margin-bottom: 20px;
+  background: var(--gradientColor);  
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-bottom: 50px;
+}
+
+button:hover {
+  background-color: var(--PrimaryColor);
+}

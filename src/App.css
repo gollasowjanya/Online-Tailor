@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Edu+TAS+Beginner:wght@400;500&family=Playfair+Display:ital,wght@1,500&family=Shadows+Into+Light&family=Yatra+One&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Edu+TAS+Beginner';
+}
+:root{
+--PrimaryColor:hsl(199,100%,33%);
+--SecondaryColor:hsl(187,85%,43%);
+--gradientColor:linear-gradient(to right, hsl(187,85%,43%) , hsl(199,100%,33%));
+--whiteColor:hsl(0,0%,100%);
+--blackColor:hsl(201,33%,16%);
+--whiteColorDeam:hsl(0,0%,93%);
+--graytext:rgb(190,190,190);
+--inputColor:rgb(239,239,239);
+--bodyColor:rgb(240,240,246);
+--cardBG:rgb(225,225,235);
+--textColor:hsl(240,4%,36%);
+}
+html{
+    scroll-behavior:smooth ;
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.section{
+    padding: 1rem 0 2rem;
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn a{
+    color: var(--whiteColor);
+    font-weight: 500;
+}
+.btn:hover{
+    background:var(--SecondaryColor);
+}
+img, video{
+    width: 100%;
+    height: auto;
+}
+input{
+    font-size: 100%;
+}
+body{
+    background:var(--bodyColor);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+@media screen and (min-width:1240px){
+    .container{
+        width: 80% !important;
+        margin:auto !important;
+    }
+    .section{
+        padding: 2rem 0 4rem;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen  and (min-width:2560px){
+    body{
+        zoom:1.7;
+    }
+}
+
+
+.textinput-div {
+    margin-bottom: 10px;
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
 }
+  
+  .measurements{
+    font-size: 25px;
+    padding-top: 100px;
+   
+    h1{
+        color: var(--PrimaryColor);
+    }
+    .measurementform{
+         width: 400px;
+         height: auto;
+         border: 2px solid var(--PrimaryColor);
+         padding: 30px;
+         margin-top: 70px;
+         margin-left: auto;
+         margin-right: auto;
+         
+    }
+    .measurebtn{
+      width: 180px;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
