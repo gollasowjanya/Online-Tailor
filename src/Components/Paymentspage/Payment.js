@@ -18,6 +18,7 @@ const Payment = () => {
       <div className="payment-options">
         <div className="payment-option">
           <input
+          className='paymentradio'
             type="radio"
             id="debitCard"
             name="paymentMethod"
@@ -44,6 +45,7 @@ const Payment = () => {
         </div>
         <div className="payment-option">
           <input
+          className='paymentradio'
             type="radio"
             id="payOnDelivery"
             name="paymentMethod"
@@ -57,6 +59,7 @@ const Payment = () => {
         </div>
         <div className="payment-option">
           <input
+          className='paymentradio'
             type="radio"
             id="halfPayment"
             name="paymentMethod"

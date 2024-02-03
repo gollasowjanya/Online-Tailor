@@ -13,8 +13,11 @@ import Payment from './../src/Components/Paymentspage/Payment'
 import Emailverified from './Pages/Emailverified';
 import Measurementspage from './Pages/Measurementspage';
 import Paymentsuccesfull from './Components/Paymentspage/Paymentsuccesfull';
+import { BagProvider } from './Pages/BagContext';
+import BagComponent from './Pages/BagComponent';
 function App() {
   return (
+    <BagProvider>
     <Router>
       <Navbar />
       <Routes>
@@ -28,10 +31,12 @@ function App() {
          <Route path='/verified' element={<Emailverified />} />
          <Route path="/measurementspage" element={<Measurementspage />} />
          <Route path='/payment-success' element={<Paymentsuccesfull />} />
+         <Route path='/bag' element={<BagComponent />} />
       </Routes>
       
       <Footer />
     </Router>
+    </BagProvider>
   );
 }
 

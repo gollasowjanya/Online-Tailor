@@ -36,9 +36,10 @@ const Signup = ({ signupUser }) => {
       >
         <Form className="form-box2">
           <h2>Register</h2>
-          <TextInput className="inputbox" name="name" type="text" label="Full Name"  />
+          <TextInput id="name" className="inputbox" name="name" type="text" label="Full Name"  />
           <TextInput
             className="inputbox"
+            id="email"
             name="email"
             type="text"
             label="Email Address"
@@ -47,6 +48,7 @@ const Signup = ({ signupUser }) => {
           />
           <TextInput
             className="inputbox"
+            id="phone"
             name="phone"
             type="tel"
             label="Mobile Number"
@@ -56,6 +58,7 @@ const Signup = ({ signupUser }) => {
 
           <TextInput
             className="inputbox"
+            id="password"
             name="password"
             type="password"
             label="Password"
@@ -65,6 +68,7 @@ const Signup = ({ signupUser }) => {
 
           <TextInput
             className="inputbox"
+            id="repeatpassword"
             name="repeatpassword"
             type="password"
             label="Repeat Password"
@@ -72,16 +76,17 @@ const Signup = ({ signupUser }) => {
             
           />
          
-          <TextInput className="inputbox" name="dateOfBirth" type="date" label="Date of Birth"  />
+          <TextInput className="inputbox" id="dateOfBirth" name="dateOfBirth" type="date" label="Date of Birth"  />
           <TextInput
             className="inputbox"
+            id="address"
             name="address"
             type="text"
             label="Address"
             placeholder=" Your Address"
             
           />
-          <div className="radio-buttons">
+          <div className="radio-buttonssign">
             <label className='tailor'>
               <Field type="radio" name="role" value="tailor" />
               I'm a tailor

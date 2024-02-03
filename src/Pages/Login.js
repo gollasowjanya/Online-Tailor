@@ -35,7 +35,7 @@ const LoginForm = () => {
         }}
       >
         <Form className="form-box">
-          <h2>Login</h2>
+          <h2 className='loginheading'>Login</h2>
           <TextInput
             className="input-box"
             name="email"

@@ -58,7 +58,7 @@
  font-size: 60px;
 }
 
-.payment-option input[type="radio"] {
+.paymentradio{
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -100,20 +100,20 @@ label {
   padding-top: 250px;
 }
 
-h2 {
+.paymentsuccessheading{
   font-size: 24px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
 
-p{
+.paymentsuccessnote{
   font-size: 16px;
   color: #666;
   margin-bottom: 30px;
 }
 
-button {
+.paymentsuccessbutton {
   width: 200px;
   height: 35px;
   padding:10px 20px;
@@ -127,6 +127,6 @@ button {
   padding-bottom: 50px;
 }
 
-button:hover {
+.paymentsuccessbutton:hover {
   background-color: var(--PrimaryColor);
-}
+} 

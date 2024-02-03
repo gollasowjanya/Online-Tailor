@@ -70,3 +70,19 @@ export const logoutUser = (dispatch) => () => {
   dispatch({ type: 'LOGOUT' });
 
 };
+export const verifyEmail = (userId, uniqueString, history) => async () => {
+  try {
+    const response = await axios.get(`${API_URL}/user/verify/${userId}/${uniqueString}`);
+
+    const { data } = response;
+    if (data.status === 'SUCCESS') {
+      history.push('/verified');
+      toast.success('Email verified successfully!');
+    } else {
+      toast.error('Email verification failed. Please try again.');
+    }
+  } catch (error) {
+    toast.error('Error during email verification: ' + error);
+  }
+};
+

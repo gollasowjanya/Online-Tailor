@@ -27,8 +27,8 @@
         margin-bottom: 20px;
     }
   
-    h2{
-       
+    .loginheading{
+       padding-top: 30px;
         font-size: 2rem;
         color: aliceblue;
         text-align: center;

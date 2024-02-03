@@ -4,10 +4,10 @@ import './payment.css';
 const Paymentsuccesfull = () => {
   return (
     <div className='paymentsuccess'>
-      <h2>Payment Successful!</h2>
-      <p>Thank you for your Order.</p>
+      <h2 className='paymentsuccessheading'>Payment Successful!</h2>
+      <p clasname='paymentsuccessnote'>Thank you for your Order.</p>
       <Link to="/designs">
-        <button>Back to Designs</button>
+        <button className='paymentsuccessbutton'>Back to Designs</button>
       </Link>
     </div>
   )

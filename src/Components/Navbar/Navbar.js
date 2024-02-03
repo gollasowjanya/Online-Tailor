@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { useBag } from './../../Pages/BagContext';
 import { GiSewingMachine } from "react-icons/gi";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaUserPlus } from "react-icons/fa6";
@@ -10,6 +11,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { logout, selectAuth } from './../../auth/actions/authSlice'; 
 import { MdShoppingBag } from "react-icons/md";
 const Navbar = () => {
+  const { bag } = useBag();
   const [active, setActive] = useState('navBar');
   const {  user } = useSelector(selectAuth);
   const dispatch = useDispatch();
@@ -54,7 +56,7 @@ const Navbar = () => {
               <span className='welcomenote'><b>Welcome, {user.name}!</b></span>
             )}
                  <li className='navItem'>
-                  <Link to='/cart' className='navLink'><MdShoppingBag  size={35}/></Link>
+                  <Link to='/bag' className='navLink'><MdShoppingBag  size={35}/>{bag.length}</Link>
                 </li>
                 <li className='navItem'>
                   <button className='logoutbtn' onClick={handleLogout}>
